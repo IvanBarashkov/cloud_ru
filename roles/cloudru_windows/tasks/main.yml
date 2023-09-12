@@ -1,0 +1,4 @@
+---
+# tasks file for windows
+- name: Print error message
+  debug: msg="This is playbook for Ubuntu Linux. You tried to run it on Windows. It does not work like this."

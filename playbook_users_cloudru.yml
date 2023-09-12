@@ -1,0 +1,9 @@
+# playbook_users_cloudru.yml
+---
+- name: Playbook for operations with users during Cloud.ru test exercise
+  hosts: all
+  become: yes
+
+  roles:
+    - { role: cloudru_windows, when: ansible_system == 'Windows' }
+    - { role: cloudru_linux, when: ansible_system == 'Linux' }

@@ -1,0 +1,8 @@
+---
+# vars file for linux
+os_required: "Ubuntu 22.04.3 LTS"
+error_msg: "This is not correct OS version, actually you use {{ os_used.stdout }}. But you need to use Ubuntu 22.04.3."
+username: "cloudru"
+dest_folder: /home/{{ username }}/.ssh
+
+
